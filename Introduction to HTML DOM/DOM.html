@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+</head>
+<style>
+    #div1{
+        background-color: green;
+        color: white;
+        padding: 5px;
+    }
+</style>
+<body>
+    <h1 id="lol"></h1>
+ <h1 id="heading"> Hello!</h1>
+ <h2 id="heading2">How are you?</h2>
+ <script>
+    let div = document.createElement('div');
+    div.id = "div1";
+    div.className = "para1";
+    div.innerHTML = "<p>Welcome to HTML DOM!</p>";
+    document.body.append(div);
+    let heading = document.getElementById("lol")
+    heading.innerHTML = "🤣😂"
+ </script>   
+</body>
+</html>
