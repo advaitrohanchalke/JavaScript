@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>A Creepy Story</title>
+    </head>
+    <style>
+        body.dark{
+            background-color: black;
+            color: white;
+        }
+        button {
+            display:block;
+            margin: 5px;
+        }
+        .textEntry {
+            margin-top: 12px;
+            margin-bottom: 15px;
+        }
+    </style>
+    <body>
+       <h1>The Basement</h1> 
+       <p id="story">I wanted to find my friend, and he was hiding in the basement.</p>
+       <button onclick="goDark()">Get in the Mood</button>
+       <div class="textEntry">
+        Type your name: <input type="text" id="name">
+       </div>
+       <button onclick="typeAndScream()">Please, Please don't click me!</button>
+       <button onclick="finishTheStory()">Tell me what happened!</button>
+       <script src="Story.js">
+       </script>
+    </body>
+</html>
