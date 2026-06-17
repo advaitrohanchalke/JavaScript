@@ -38,5 +38,32 @@
         <a href="Help.html">Help</a>
     </div>
     </div>
+    <section>
+        <h1>My Portfolio Website</h1>
+  <img class="mySlides" src="https://thumbs.dreamstime.com/b/idyllic-summer-landscape-clear-mountain-lake-alps-45054687.jpg" style=" width:500px;">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPSnJEGHdrNiPiXOq8JD8rz-2x4U1LeVaH97t_xf7HsQ&s=10" style=" width:500px;">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0PZzR4UUDQ0ZnKUGovmoXh1-EU_dXcdFCsrecbN02_g&s=10" style=" width:500px;">
+  
+  <p style="font-size: 20px;">This is my portfolio website.</p>
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var mySlides = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  mySlides++;
+  if (mySlides > x.length) {mySlides = 1}
+  x[mySlides-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
 </body>
 </html>
